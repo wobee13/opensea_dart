@@ -55,7 +55,7 @@ void main() async{
   openSea.getCollection("copypasteearth").then((value) => print(value));
   await Future.delayed(const Duration(seconds: 5));
 
-  ///getAssets
+  ///getAssets (requires apiKey to be set)
   openSea.getAssets(orderBy: OrderBy.saleDate, orderDirection: OrderDirection.asc,
           limit: "1", offset: "0", collection: "doodles-official").then((value) => print(value));
 }
